@@ -1,0 +1,12 @@
+<Doctype!>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Главная</title>
+</head>
+<body>
+    {%for category in categories%}
+    <h1><a href = "{% url 'category' category.slug %}">{{category.name}}</a></h1>
+    {%endfor%}
+</body>
+</html>
